@@ -26,11 +26,9 @@ the main job of an Agent in RecSim is divided into 2 step
 
 # Observation
   A RecSim observation is a dictionary with 3 keys:
-  'user' ~ User observable feature
-  
-  'doc' ~ Document observable feature -> determine by environment
-  
-  'response' ~ User response
+  1. 'user' ~ User observable feature
+  2. 'doc' ~ Document observable feature -> determine by environment
+  3. 'response' ~ User response
 
   ?Note that this environment does not implement user observable features, so that field would be empty at all times.
 
