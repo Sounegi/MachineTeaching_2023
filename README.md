@@ -36,3 +36,12 @@ First, have to initiate the environment to illustrate what they produce and cons
 
   ?Note that this environment does not implement user observable features, so that field would be empty at all times.
 
+# Slate
+  then Agent will represent the slate (list of K indices) from 'doc' to user
+
+# Hierarchical Agent Layers
+
+![image](https://github.com/Sounegi/MachineTeaching_2023/assets/67320090/29fe2188-ee1b-4d3d-9127-8890a513e5e7)
+Can recursive the hierarchical agent with several base agents, the work of a hierarchical agent is to preprocess the observation data, and postprocessing the abstract output from base agents.
+this can be used to design more complex agents that calculate several observed factors.
+
