@@ -24,6 +24,10 @@ the main job of an Agent in RecSim is divided into 2 step
 1. Observe the User and Document of Available choice(arm for Bandit) and user context
 2. Calculate using the observed features to give the user a K-size slate from available choices for user to response
 
+# Set Up
+First, have to initiate the environment to illustrate what they produce and consume, and how they handle with agent.
+-> Then the agent reset the environment at the start of each session (trigger the resampling of the user) 
+
 # Observation
   A RecSim observation is a dictionary with 3 keys:
   1. 'user' ~ User observable feature
