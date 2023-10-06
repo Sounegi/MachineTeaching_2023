@@ -50,33 +50,19 @@ this can be used to design more complex agents that calculate several observed f
    """TabularQAgent init.
 
     Args:
-      observation_space: a gym.spaces object specifying the format of
-        observations.
-      action_space: a gym.spaces object that specifies the format of actions.
-      eval_mode: Boolean indicating whether the agent is in training or eval
-        mode.
-      ignore_response: Boolean indicating whether the agent should ignore the
-        response part of the observation.
-      discretization_bounds: pair of real numbers indicating the min and max
-        value for continuous attributes discretization. Values below the min
-        will all be grouped in the first bin, while values above the max will
-        all be grouped in the last bin. See the documentation of numpy.digitize
-        for further details.
-      number_bins: positive integer number of bins used to discretize continuous
-        attributes.
-      exploration_policy: either one of ['epsilon_greedy', 'min_count'] or a
-        custom function. TODO(mmladenov): formalize requirements of this
-          function.
-      exploration_temperature: a real number passed as parameter to the
-        exploration policy.
-      learning_rate: a real number between 0 and 1 indicating how much to update
-        Q-values, i.e. Q_t+1(s,a) = (1 - learning_rate) * Q_t(s, a)
-                                     + learning_rate * (R(s,a) + ...).
-      gamma: real value between 0 and 1 indicating the discount factor of the
-        MDP.
-      ordinal_slates: boolean indicating whether slate ordering matters, e.g.
-        whether the slates (1, 2) and (2, 1) should be considered different
-        actions. Using ordinal slates increases complexity factorially.
+  - observation_space: a gym.spaces object specifying the format of observations.
+  - action_space: a gym.spaces object that specifies the format of actions.
+  - eval_mode: Boolean indicating whether the agent is in training or eval mode.
+  - ignore_response: Boolean indicating whether the agent should ignore the response part of the observation.
+  - discretization_bounds: pair of real numbers indicating the min and max value for continuous attributes discretization. Values below the min will all be grouped in the first bin, while values above the max will all be grouped in the last bin. See the documentation of numpy.digitize for further details.
+  -  number_bins: positive integer number of bins used to discretize continuous attributes.
+  -  exploration_policy: either one of ['epsilon_greedy', 'min_count'] or a custom function. TODO(mmladenov): formalize requirements of this function.
+  -  exploration_temperature: a real number passed as parameter to the exploration policy.
+  -  learning_rate: a real number between 0 and 1 indicating how much to update Q-values, i.e. Q_t+1(s,a) = (1 - learning_rate) * Q_t(s, a) + learning_rate * (R(s,a) + ...).
+  -  gamma: real value between 0 and 1 indicating the discount factor of the MDP.
+  -  ordinal_slates: boolean indicating whether slate ordering matters, e.g. whether the slates (1, 2) and (2, 1) should be considered different actions. Using ordinal slates increases complexity factorially.
+
+
       **kwargs: additional arguments like eval_mode.
     """
 
