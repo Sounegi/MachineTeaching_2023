@@ -8,21 +8,35 @@
     Helper Class
     - **AbstractClickBanditLayer** => use to mix base layer
     - **SufficientStatisticLayer** => use to log user response & agent recommend on different cluster of doc.
-      - **FixedLenghtHistoryLayer** => record data with fixed lenght
+      - **FixedLenghtHistoryLayer** => record data with fixed length
       - **ClusterClickStatsLayer** => collect cluster click(which pass to agent), and impression count(how many time this cluster getting recommended)
 + **MABAlgorithm** => base class for Multi-Armed N=Bandit agent <br>
     Inherited Class
     - **UCB1**
-    - **KLUCB**
+    - **KLUCB** => Kullback-Leibler Upper Confidence Bounds (KL-UCB) algorithm.
     - **ThompsonSampling**
 + **GLMAlgorithm** => base class for Generalized Linear Model Bandit algorithm agent <br>
     Inherited Class
     - **GLM_UCB**
     - **GLM_TS**
 + **DQNAgentRecsim** => Recsim-specify Dopamine DQN <br>
-more about [Dopamine DQN](https://github.com/google/dopamine)
+more about [Dopamine DQN](https://github.com/google/dopamine) <br>
+special method and class for DQN
+  - **DQNNetworkType** => call for q_value of DQN
+  - **ResponseAdapter** => custom flattening of response for DQN
+  - **ObservationAdapter** => convert doc. for DQN
+  - recsim_dqn_network => get q_value from DQN Network
+  - wrapped_replay_buffer => buffering
 ## Method & Function for Agent
 + **GymSpaceWalker** => use to flatten doc that come in gym_space, usually used by recursive agent
 + **epsilon-greedyexploration** => compute epsilon greedy explore
 + **min_count** => find slate with least being selected
+## Pre-made Agent (Ready to Use)
++ **ClusterBanditAgent**
++ **GreedyClusterAgent**
++ **FullSlateQAgent**
++ **SlateDecompQAgent**
++ **GreedyPCTRAgent**
++ **RandomAgent**
++ **TabularQAgent**
 
