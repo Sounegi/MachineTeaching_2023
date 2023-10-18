@@ -1,8 +1,8 @@
 # Summerize of Abstract class, method, and agent that Recsim provides
-+ **AbstractRecommenderAgent** => base class for the basic agent
++ **AbstractRecommenderAgent** => base class for the basic agent <br>
   Method in class
-  + set_state
-  + update
+  1. set_state
+  2. update
   - **AbstractEpisodicRecommenderAgent** => for episodic recommending task
     - **AbstractMultiUserEpisodicRecommenderAgent** => episodic for multiuser
   - **AbstractHirerachicalAgentLayer** => for recursive agent building
