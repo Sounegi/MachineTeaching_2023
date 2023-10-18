@@ -4,5 +4,11 @@
     - AbstractMultiUserEpisodicRecommenderAgent => episodic for multiuser
   - AbstractHirerachicalAgentLayer => for recursive agent building
 + MABAlgorithm => base class for Multi-Armed N=Bandit agent
+    - UCB1
+    - KLUCB
+    - ThompsonSampling
 + GLMAlgorithm => base class for Generalized Linear Model Bandit algorithm agent
-+ DQNAgentRecsim => Recsim-specify Dopamine DQN
+    - GLM_UCB
+    - GLM_TS
++ DQNAgentRecsim => Recsim-specify Dopamine DQN <br>
+more about [Dopamine DQN](https://github.com/google/dopamine)
