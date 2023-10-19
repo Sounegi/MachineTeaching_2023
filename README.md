@@ -66,4 +66,4 @@ this can be used to design more complex agents that calculate several observed f
       **kwargs: additional arguments like eval_mode.
     """
 # Formula for UCB and out flashcard teaching
-Retention Rate $Pr(recall| card; ww)$
+Retention Rate $Pr(recall| card; \omega)$
