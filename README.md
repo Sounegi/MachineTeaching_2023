@@ -67,4 +67,6 @@ this can be used to design more complex agents that calculate several observed f
     """
 # Formula for UCB and out flashcard teaching
 Retention Rate <br>
+[RR] (Retention Rate.png)
 Arm selecting formula
+[select] (Arm Formula.png)
