@@ -67,6 +67,6 @@ this can be used to design more complex agents that calculate several observed f
     """
 # Formula for UCB and out flashcard teaching
 Retention Rate <br>
-[RR] (Retention Rate.png)
+![Retention Rate](https://github.com/Sounegi/MachineTeaching_2023/assets/67320090/7a8e4af0-e73e-4f7b-95cc-31e2c8d70624)
 Arm selecting formula
-[select] (Arm Formula.png)
+![Arm Formula](https://github.com/Sounegi/MachineTeaching_2023/assets/67320090/b747a231-25c6-4bc8-82ad-8bc0e1d7afe2)
