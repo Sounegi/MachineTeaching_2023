@@ -47,3 +47,5 @@ special method and class for DQN
 + **TabularQAgent**(AbstractEpisodicRecommenderAgent) <br>
   apply tabular Q-learning. [Medium](https://medium.com/analytics-vidhya/slateq-a-scalable-algorithm-for-slate-recommendation-problems-735a1c24458c), [LevelupCoding](https://levelup.gitconnected.com/tabular-q-learning-a-prominent-reinforcement-learning-rl-algorithm-db364fe2d474?gi=21a4351e098a)
 
+## Choice Model
+*Abstract classes that encode a user's state and dynamics. <br>
