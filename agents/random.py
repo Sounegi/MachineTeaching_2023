@@ -12,7 +12,7 @@ from recsim.simulator import environment
 from recsim.simulator import recsim_gym
 from recsim.simulator import runner_lib
 
-class RandomAgent(agent.AbstractRecommenderAgent):
+class RandomAgent(agent.AbstractEpisodicRecommenderAgent):
   """Parent class for stackable agent layers."""
 
   def __init__(self, action_space, random_seed):
