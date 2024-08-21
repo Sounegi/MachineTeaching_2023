@@ -24,9 +24,11 @@ the main job of an Agent in RecSim is divided into 2 step
 1. Observe the User and Document of Available choice(arm for Bandit) and user context
 2. Calculate using the observed features to give the user a K-size slate from available choices for user to response
 
-# Set Up
-First, have to initiate the environment to illustrate what they produce and consume, and how they handle with agent.
--> Then the agent reset the environment at the start of each session (trigger the resampling of the user) 
+# Try Running Simulation
+1. Download Recsim folder
+2. run main.py
+
+you can create your own agent with your own algorithm using template from flashcard_agents.py, then using function create_agent_helper to initialize the agent before using it in simulation.
 
 # Observation
   A RecSim observation is a dictionary with 3 keys:
